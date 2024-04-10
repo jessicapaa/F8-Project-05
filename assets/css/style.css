@@ -65,6 +65,13 @@ a {
     background: #696d77;
     margin-right: 12px;
 }
+.section__heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25; /* 125% */
+}
 /* HEADER */
 .header {
     padding: 42px 0;
@@ -299,4 +306,99 @@ a {
     color: #fff;
     font-size: 0.8rem;
     line-height: 1; /* 100% */
+}
+
+/* PRODUCT */
+.product {
+    margin-top: 60px;
+    padding-top: 100px;
+}
+
+.product__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__media {
+    position: relative;
+}
+.product__content {
+    width: 470px;
+}
+.product__img-wrap {
+    position: relative;
+    width: 470px;
+    height: 619px;
+    overflow: hidden;
+}
+.product__img {
+    display: block;
+    width: 448px;
+    object-fit: cover;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.product__img-wrap::before {
+    content: "";
+    background-image: url(../img/product-decor-01.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 90%;
+    z-index: -1;
+}
+.product__decor {
+    position: absolute;
+    top: 60px;
+    right: 55px;
+}
+
+.product__check {
+    position: absolute;
+    bottom: 90px;
+    right: -110px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 15px;
+    width: 226px;
+    height: 70px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.product__check-title {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.product__check-desc {
+    margin-top: 5px;
+    color: #696d76;
+    font-size: 1.2rem;
+}
+
+.product__content-list {
+    margin-top: 70px;
+}
+.product__content-item + .product__content-item {
+    margin-top: 30px;
+}
+
+.product__content-title {
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.55; /* 145.455% */
+}
+
+.product__content-desc {
+    margin-top: 16px;
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
 }
