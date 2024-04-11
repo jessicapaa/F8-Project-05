@@ -618,3 +618,133 @@ a {
 .payment__item:last-child {
     background: #5771e1;
 }
+
+/* FEEDBACK */
+.feedback {
+    margin-top: 60px;
+    padding-top: 100px;
+}
+
+.feedback__top {
+    text-align: center;
+}
+.feedback__title {
+    justify-content: center;
+}
+
+.feedback__desc {
+    margin: 18px auto 0;
+    width: 435px;
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.feedback__list {
+    margin-top: 70px;
+    display: flex;
+    column-gap: 30px;
+}
+.feedback__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.feedback__quote-wrap {
+    position: relative;
+    width: 570px;
+    padding: 42px 28px;
+    border: 1px solid #dfe2e8;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.25s ease-in;
+}
+.feedback__item-desc {
+    color: #696d76;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 1.55; /* 154.545% */
+}
+.feedback__quote-wrap:hover {
+    transform: translateY(-18px);
+    border-color: transparent;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.feedback__quote-wrap:hover .feedback__item-desc::after {
+    border-color: transparent;
+}
+.feedback__item-desc::after {
+    content: "";
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    background: #fff;
+    border-right: 1px solid #dfe2e8;
+    border-bottom: 1px solid #dfe2e8;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.25s ease-in;
+}
+
+.feedback__item-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 82px;
+}
+
+.feedback__info-wrap {
+    position: relative;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background: #4ab5e3;
+    overflow: hidden;
+}
+
+.feedback__info-avatar {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.feedback__item:nth-of-type(2) .feedback__info-wrap {
+    background: #439f90;
+}
+
+.feedback__info-name {
+    margin-top: 20px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+}
+
+.feedback__info-job {
+    margin-top: 6px;
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 30px; /* 166.667% */
+}
+
+.feedback__dots {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.feedback__dot {
+    width: 22px;
+    height: 6px;
+    border: 1px solid #9b9fab;
+    cursor: pointer;
+}
+.feedback__dot.active {
+    background: #7264d6;
+    border-color: #7264d6;
+}
