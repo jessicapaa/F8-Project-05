@@ -402,3 +402,134 @@ a {
     font-size: 1.6rem;
     line-height: 1.75; /* 175% */
 }
+
+/* CARD */
+.card {
+    margin-top: 60px;
+    padding-top: 100px;
+}
+
+.card__inner {
+    display: flex;
+    column-gap: 130px;
+    align-items: center;
+}
+
+.card__content {
+    width: 470px;
+}
+
+.card__media {
+}
+
+.card__desc {
+    color: #696d76;
+    margin: 20px 0 28px;
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+}
+
+.card__list {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-top: 18px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.card__list::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #7264d6;
+}
+
+.card__btn {
+    margin-top: 38px;
+}
+
+.card__media {
+    position: relative;
+}
+
+.card__send {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 276px;
+    height: 86px;
+    padding: 23px 13px 26px 13px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+    top: -48px;
+    right: -88px;
+    z-index: 1;
+}
+.card__send-body {
+    flex: 1;
+}
+.card__send-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__send-top-title {
+    color: #212832;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card__send-top-desc {
+    color: #212832;
+    font-size: 1.6rem;
+}
+
+.card__send-bottom-title {
+    color: #696d76;
+    font-size: 1rem;
+}
+
+.card__send-bottom-desc {
+    color: #696d76;
+    font-size: 1rem;
+}
+
+.card__img-wrap {
+    /* position: relative; */
+    width: 482px;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__money {
+    position: absolute;
+    bottom: -55px;
+    right: -88px;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.card__money-title {
+    margin: 14px 0 6px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.card__money-desc {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
