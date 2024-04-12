@@ -745,7 +745,7 @@ a {
     border: 1px solid #9b9fab;
     cursor: pointer;
 }
-.feedback__dot.active {
+.feedback__dot-active {
     background: #7264d6;
     border-color: #7264d6;
 }
@@ -774,7 +774,6 @@ a {
 
 .update__item {
     display: flex;
-    /* align-items: center; */
     column-gap: 22px;
     padding: 28px;
     border-radius: 12px;
