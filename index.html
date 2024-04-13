@@ -36,6 +36,9 @@
 
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -80,7 +83,7 @@
         <div class="container">
             <div class="hero__inner">
                 <!-- Hero Content -->
-                <div class="hero__content">
+                <div class="hero__content" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <p class="section__title">Digital Smart Wallet</p>
                     <h1 class="hero__heading">
                         Digital <span class="hero__heading-strong">Payment</span> For Everyone.
@@ -104,9 +107,9 @@
                 <div class="hero__media">
 
                     <figure class="hero__img-wrap">
-                        <img src="./assets/img/mobile__screen.png" alt="Digital Payment For Everyone."
-                            class="hero__img">
-                        <div class="deposite">
+                        <img src="./assets/img/mobile__screen.png" alt="Digital Payment For Everyone." class="hero__img"
+                            data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="deposite" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                             <a href="#!">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +123,7 @@
                             <p class="deposite__title">Deposite</p>
                             <span class="deposite__price">$32000</span>
                         </div>
-                        <div class="hero__money">
+                        <div class="hero__money" data-aos="fade-up" data-aos-duration="1000" class="hero__secured">
                             <a href="#!">
                                 <svg width="20" height="26" viewBox="0 0 20 26" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +143,8 @@
                         </div>
                     </figure>
 
-                    <div class="hero__circle">
+                    <div class="hero__circle" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <p class="hero__circle__top">0%</p>
                         <p class="hero__circle_bottom">Interest</p>
                     </div>
@@ -182,7 +186,8 @@
                                     fill="#7264D6" />
                             </svg>
                         </span>
-                        <div class="product__check">
+                        <div class="product__check" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-duration="1000">
                             <span class="product-check-img">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -204,9 +209,10 @@
                     <!-- Product Content -->
                     <div class="product__content">
                         <p class="section__title">Digital Smart Wallet</p>
-                        <h2 class="section__heading product__heading">How It Works</h2>
+                        <h2 class="section__heading product__heading" data-aos-easing="ease-in-sine">How It Works</h2>
 
-                        <div class="product__content-list">
+                        <div class="product__content-list" data-aos="fade-left" data-aos-duration="500"
+                            data-aos-easing="ease-in-sine">
                             <!-- item 1 -->
                             <div class="product__content-item">
                                 <h3 class="product__content-title">
@@ -243,11 +249,11 @@
         </div>
 
         <!-- CARD -->
-        <section class="card" id="feature">
+        <section class="card" data-aos="fade-down" data-aos-duration="1000" id="feature">
             <div class="container">
                 <div class="card__inner">
                     <!-- Card Content -->
-                    <div class="card__content">
+                    <div class="card__content" data-aos="fade-right" data-aos-duration="800">
                         <p class="section__title">Digital Smart Wallet</p>
                         <h2 class="section__heading card__heading">One Card For All Your Payments</h2>
                         <p class="card__desc">
@@ -268,7 +274,8 @@
                         </figure>
 
                         <!-- Card Send -->
-                        <div class="card__send">
+                        <div class="card__send" data-aos="fade-left" data-aos-easing="ease-in-sine"
+                            data-aos-duration="600">
                             <span>
                                 <svg width="80" height="76" viewBox="0 0 80 76" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -319,7 +326,8 @@
                             </div>
                         </div>
                         <!-- Card Money -->
-                        <div class="card__money">
+                        <div class="card__money" data-aos="fade-left" data-aos-easing="ease-in-sine"
+                            data-aos-duration="600">
                             <span class="card__money-img">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -346,7 +354,7 @@
         </section>
 
         <!-- TRANSFER -->
-        <section class="transfer">
+        <section data-aos="fade-down" data-aos-duration="1500" class="transfer">
             <div class="container">
                 <div class="transfer__inner">
                     <!-- Transfer Media -->
@@ -549,7 +557,7 @@
                     </div>
 
                     <!-- Transfer  Content -->
-                    <div class="card__content">
+                    <div class="card__content" data-aos="fade-left" data-aos-duration="800">
                         <p class="section__title">Digital Smart Wallet</p>
                         <h2 class="section__heading card__heading">Transfer and Deposite Your Money Anytime</h2>
                         <p class="card__desc">
@@ -566,7 +574,7 @@
         </section>
 
         <!-- FEEDBACK -->
-        <section class="feedback">
+        <section data-aos="fade-down" data-aos-duration="1000" class="feedback">
             <div class="container">
                 <div class="feedback__inner">
 
@@ -638,7 +646,7 @@
         </section>
 
         <!-- UPDATE -->
-        <section class="update">
+        <section data-aos="fade-down" data-aos-duration="1000" class="update">
             <div class="container">
                 <!-- Update Top -->
                 <div class="update__top">
@@ -725,7 +733,7 @@
         </section>
 
         <!-- DOWNLOAD -->
-        <section class="download">
+        <section data-aos="fade-down" data-aos-duration="1000" class="download">
             <div class="container">
                 <div class="download__inner">
                     <p class="section__title download__title">Our App</p>
@@ -834,6 +842,10 @@
             </p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
